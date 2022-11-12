@@ -1,0 +1,35 @@
+<head>
+  <link href="./style.css"
+        rel="stylesheet"
+        type="text/css"/>  
+</head>
+
+<body class="frontend">
+	<h1> Greetings Traveller! </h1>
+	
+	<form method="post" action="customerBackend.php" onsubmit="return validateInputs()">
+		<h2> Log your visit to our shop </h2>
+				<p class="errmsg" id="usernameerror">Must enter a username in the form of an email address!</p>
+				<p class="errmsg" id="passworderror">Must enter a password!</p>
+        	<p>Username: <input type="text" id ="User" name="Username"></p><br>
+        	<p>Password: <input type="password" id="Password" name="Password"></p>
+
+		<h2> What would you like to purchase? </h2>
+   			<p class="errmsg" id="itemquantityerror">Must enter an integer value 0 or greater for each item!</p>
+		<p>Longsword ($5 each): </p><input type="text" id="Longsword" name="Longsword"><br>
+		<p>Sturdy Armor ($7 each): </p><input type="text" id="Sturdy Armor" name="SturdyArmor"><br>
+		<p>Ominous Potion ($30 each): </p><input type="text" id="Ominous Potion" name="OminousPotion"><br>
+
+		<h2> Select Shipping Method </h2>
+    			<p class="errmsg" id="shippingerror">Must select a shipping method!</p>
+		<input type="radio" name="shipping" value="Free 7 Day"><p>Free 7 Day</p><BR>
+		<input type="radio" name="shipping" value="Overnight"><p>$50.00 Overnight</p><BR>
+		<input type="radio" name="shipping" value="Three Day"><p>$5.00 Three Day</p><BR>
+		
+		<br>
+
+        <input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+    	</form>
+</body>
+<script type="text/javascript" src ="./formChecker.js"></script>

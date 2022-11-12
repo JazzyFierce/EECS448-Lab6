@@ -1,0 +1,34 @@
+body.frontend {
+  background-image: url("shop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color:antiquewhite;
+  font-family: "Lucida Handwriting"
+}
+
+h2 {
+  color:antiquewhite;
+  font-family: "Segoe Script";
+}
+
+p {
+  background-color: brown;
+  color:antiquewhite;
+  display: inline;
+  font-family: "Ink Free";
+}
+
+p.errmsg {
+  background-color: black;
+  display: none;
+  color: white;
+}
+
+input {
+  color:steelblue;
+  background-color: burlywood;
+  font-family: "Lucida Handwriting"
+}
